@@ -9,6 +9,7 @@ import fashion_mnist
 
 if __name__ == "__main__":
     model = fashion_mnist.NeuralNetwork()
+    model.load_state_dict(torch.load('../model.pth'))
 
     classes = [
         "T-shirt/top",
